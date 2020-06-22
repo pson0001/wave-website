@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8b3fa2b598464bfc617c6a9b6a21622",
+    "revision": "4df39b8e784278c4e9d6d6a5dc03850d",
     "url": "/wave-website/index.html"
   },
   {
-    "revision": "329fc8df1780cb2bd8a4",
-    "url": "/wave-website/static/css/main.71a16005.chunk.css"
+    "revision": "175ba7116423c5fddfa5",
+    "url": "/wave-website/static/css/main.583012a4.chunk.css"
   },
   {
-    "revision": "5355308c6a7bdfa3c32b",
-    "url": "/wave-website/static/js/2.65fd760f.chunk.js"
+    "revision": "0f10be12adf34086a1ae",
+    "url": "/wave-website/static/js/2.01898c56.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/wave-website/static/js/2.65fd760f.chunk.js.LICENSE.txt"
+    "url": "/wave-website/static/js/2.01898c56.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "329fc8df1780cb2bd8a4",
-    "url": "/wave-website/static/js/main.6fad1216.chunk.js"
+    "revision": "175ba7116423c5fddfa5",
+    "url": "/wave-website/static/js/main.59427b07.chunk.js"
   },
   {
     "revision": "95293b91152859f7df9a",
