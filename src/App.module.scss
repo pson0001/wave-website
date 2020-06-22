@@ -1,0 +1,220 @@
+.IntroContainer {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: all 0.6s ease;
+  & .Name {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-family: "Lobster";
+    font-size: 66px;
+  }
+
+  & .Paragraph {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  &.IntroContainerLoaded {
+    color: #171caf;
+  }
+  &.IntroDisable {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+  }
+}
+
+.WaveContainer {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.6s ease;
+  & .WaveOneInitial {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    background-color: #171caf;
+    border-radius: 200px;
+    transition: all 0.6s ease;
+    z-index: 1;
+  }
+  & .WaveOneRectangle {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    z-index: 1;
+  }
+  & .WaveOne {
+    width: 2000px;
+    height: 2000px;
+    transform: rotate(45deg);
+    border-radius: 100%;
+    top: 86%;
+    left: -20%;
+    background: #171caf;
+    transform-origin: 50% 49.4%;
+    animation: drift 2s infinite linear;
+    animation-delay: 0.6s;
+  }
+  & .WaveMenu {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    z-index: 1;
+    animation: none;
+    transform-origin: 50% 50%;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+    transform: rotate(0deg);
+  }
+  & .WaveTwo {
+    position: absolute;
+    background: #f7c969;
+    width: 2000px;
+    height: 2000px;
+    top: 85%;
+    left: -35%;
+
+    border-radius: 100%;
+    transform-origin: 50% 49.4%;
+    animation: drift 3s infinite linear;
+    //animation-delay: 0.6s;
+    transition: all 0.6s ease;
+  }
+  & .WaveThree {
+    position: absolute;
+    background: #e8989f;
+    width: 2500px;
+    height: 2500px;
+    top: 85%;
+    left: -20%;
+    border-radius: 100%;
+    transform-origin: 50% 49.6%;
+    animation: drift 4s infinite linear;
+    //animation-delay: 0.6s;
+    transition: all 0.6s ease;
+  }
+}
+
+.WaveContainerDisable {
+  & .WaveOne {
+    top: 110%;
+  }
+  & .WaveMenu {
+    top: 0%;
+  }
+  & .WaveTwo {
+    top: 110%;
+  }
+  & .WaveThree {
+    top: 110%;
+  }
+}
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 768px) {
+
+
+  .WaveContainer {
+    & .WaveOne {
+      width: 1000px;
+      height: 1000px;
+   
+      left: -15%;
+    }
+    & .WaveMenu {
+      width: 100vw;
+      height: 100vh;
+
+      top: 0%;
+      left: 0%;
+    }
+    & .WaveTwo {
+      width: 1000px;
+      height: 1000px;
+    
+      left: -35%;
+    }
+    & .WaveThree {
+      width: 1000px;
+      height: 1000px;
+
+      left: 10%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1152px) and (min-width: 768px) {
+  .WaveContainer {
+    & .WaveOne {
+      width: 1500px;
+      height: 1500px;
+    
+      left: -15%;
+    }
+    & .WaveMenu {
+      width: 100vw;
+      height: 100vh;
+
+      left: 0%;
+    }
+    & .WaveTwo {
+      width: 1500px;
+      height: 1500px;
+  
+      left: -35%;
+    }
+    & .WaveThree {
+      width: 1500px;
+      height: 1500px;
+   
+      left: 10%;
+    }
+  }
+}
+@media only screen and (max-width: 1800px) and (min-width: 1640px) {
+  .WaveContainer {
+    & .WaveOne {
+      width: 2700px;
+      height: 2700px;
+  
+      left: -15%;
+    }
+    & .WaveMenu {
+      width: 100vw;
+      height: 100vh;
+
+
+      left: 0%;
+    }
+    & .WaveTwo {
+      width: 2700px;
+      height: 2700px;
+      left: -35%;
+    }
+    & .WaveThree {
+      width: 2700px;
+      height: 2700px;
+      left: 10%;
+    }
+  }
+}

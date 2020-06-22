@@ -1,0 +1,68 @@
+.AboutContainer {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.4s ease;
+  color: #15186d;
+  font-weight: 300;
+  & .AboutContentContainer {
+    width: 60%;
+    margin: 200px auto;
+    & .ParaTitle {
+      font-family: "Lobster";
+      color: #171caf;
+      font-size: 28px;
+      &:after {
+        content: "";
+        margin-top: -12px;
+        margin-left: 3px;
+        display: block;
+        width: 200px;
+        height: 8px;
+        background-color: #f7c969;
+        z-index: -1;
+      }
+    }
+    & .AboutParagraphContainer {
+      margin-top: 80px;
+      & .SubParaTitle {
+        font-size: 20px;
+        font-family: "Lobster";
+        color: #171caf;
+        &:after {
+          content: "";
+          margin-top: -10px;
+          margin-left: 60px;
+          display: block;
+          width: 160px;
+          height: 6px;
+          background-color: #f7c969;
+          z-index: -1;
+        }
+      }
+      & .ContentContainer {
+        display: flex;
+        flex-direction: row;
+        & .leftContent {
+          padding-right: 10px;
+          width: 30%;
+        }
+        & .RightContent {
+          font-size: 14px;
+          width: 70%;
+          p:first-child {
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+.AboutContainerDisabled {
+  opacity: 0;
+}

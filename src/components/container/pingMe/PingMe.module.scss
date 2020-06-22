@@ -1,0 +1,101 @@
+.PingMeContainer {
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 1;
+  transition: all 0.4s ease;
+  color: #15186d;
+  font-weight: 300;
+
+  & .ContentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: 100px auto;
+
+    & .LeftContent {
+      width: 40%;
+      & .Label {
+        color: #828282;
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+      & .Name {
+        margin-top: 0px;
+        font-size: 46px;
+        font-weight: 700;
+      }
+      & .SubName {
+        margin: 4px 0px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    & .RightContent {
+      margin-top: 4%;
+      width: 40%;
+      font-weight: 400;
+      font-size: 14px;
+      & div {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0px;
+        & p a {
+          color: #15186d;
+        }
+        & img {
+          margin: 8px 8px;
+          height: 24px;
+          width: 24px;
+        }
+        & .Yellow {
+          margin-top: 6px;
+          margin-right: 12px;
+          border-radius: 40px;
+          height: 40px;
+          width: 40px;
+          background-color: #f7c969;
+        }
+        & .Pink {
+          margin-top: 6px;
+          margin-right: 12px;
+          border-radius: 40px;
+          height: 40px;
+          width: 40px;
+          background-color: #e8989f;
+        }
+
+        & .Blue {
+          margin-top: 6px;
+          margin-right: 12px;
+          border-radius: 40px;
+          height: 40px;
+          width: 40px;
+          background-color: #15186d;
+        }
+      }
+    }
+  }
+}
+
+.PingMeContainerDisabled {
+  opacity: 0;
+}
+@media only screen and (max-width: 850px) {
+  .PingMeContainer {
+    & .ContentContainer {
+      flex-direction: column;
+      & .LeftContent {
+        width: 100%;
+      }
+      & .RightContent {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+.Navigation {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  z-index: 10;
+  & .NavigationContainer {
+    width: 90%;
+    margin: 40px auto 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & .Logo {
+      a {
+        font-family: "Lobster";
+        font-size: 32px;
+        color: #171caf;
+        text-decoration: none;
+      }
+    }
+    & .Burger {
+      cursor: pointer;
+      span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        background: #171caf;
+        transition: all 0.3s ease;
+        transition-delay: 0s;
+      }
+    }
+    & .BurgerActive {
+      span {
+        background: #fff;
+        transition-delay: 0.4s;
+      }
+      span:nth-last-child(3) {
+        opacity: 1;
+        transform: rotate(45deg) translate(4px, 9px);
+      }
+      span:nth-last-child(1) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(4px, -8px);
+      }
+      span:nth-last-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+  & .MenuContainer {
+    position: absolute;
+    right: 5%;
+    opacity: 0;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 0.4s ease;
+    transition-delay: 0.1s;
+    visibility: hidden;
+
+    & a {
+      color: white;
+      text-decoration: none;
+      font-family: "Lobster";
+      font-size: 32px;
+      & .MenuItemContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        & .MenuItem {
+          margin-right: 0px;
+          transition: all 0.3s ease;
+        }
+        & .Home {
+          margin-top: 16px;
+          width: 0px;
+          height: 16px;
+          background-color: #fff;
+          border-radius: 100%;
+          transition: all 0.3s ease;
+        }
+        & .About {
+          margin-top: 16px;
+          width: 0px;
+          height: 16px;
+          background-color: #f7c969;
+          border-radius: 100%;
+          transition: all 0.3s ease;
+        }
+        &:hover {
+          & .MenuItem {
+            margin-right: 10px;
+          }
+          & .Home {
+            margin-top: 16px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 100%;
+          }
+          & .About {
+            margin-top: 16px;
+            width: 16px;
+            height: 16px;
+            background-color: #f7c969;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    & a {
+      & .MenuItemActive {
+        margin-right: 10px;
+      }
+      & .ActiveHome {
+        margin-top: 16px;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 100%;
+      }
+      & .ActiveAbout {
+        margin-top: 16px;
+        width: 16px;
+        height: 16px;
+        background-color: #f7c969;
+        border-radius: 100%;
+      }
+    }
+  }
+  & .MenuContainerActive {
+    opacity: 1;
+    visibility: visible;
+    height: 50vh;
+    cursor: pointer;
+    & a {
+      & .MenuItemActive {
+        margin-right: 10px;
+      }
+      & .ActiveHome {
+        margin-top: 16px;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border-radius: 100%;
+      }
+      & .ActiveAbout {
+        margin-top: 16px;
+        width: 16px;
+        height: 16px;
+        background-color: #f7c969;
+        border-radius: 100%;
+      }
+    }
+  }
+}
