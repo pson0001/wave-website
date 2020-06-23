@@ -26,7 +26,7 @@ const About = (props) => {
         <p className={classes.ParaTitle}>A bit about me</p>
         <p>Hi, I’m Ping Song.</p>
         <p>
-          I am a UX designer with frontend development and industrial design
+          I am a UX designer with front-end development and industrial design
           background.
         </p>
         <p>
@@ -59,8 +59,8 @@ const About = (props) => {
                 Monash applications
               </p>
               <p>
-                practice a range of user experience design methodologies, user
-                interface design and frontend technologies
+                Practice a range of user experience design methodologies, user
+                interface design and front-end technologies
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const About = (props) => {
               <p>
                 Designed and assembled autonomous drawing robot prototypes. Each
                 robot was encased in a decorative shell that was designed and
-                3D-printed by me.
+                3D-printed by me
               </p>
             </div>
           </div>
@@ -82,7 +82,7 @@ const About = (props) => {
               <p>
                 Working on a range of tasks: Leading and developing branding
                 design projects. Interacting (on a daily basis) with designers,
-                developers and clients.
+                developers, and clients
               </p>
             </div>
           </div>

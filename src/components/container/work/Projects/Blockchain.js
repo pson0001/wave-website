@@ -48,16 +48,16 @@ const Blockchain = (props) => {
           </div>
           <div className={classes.RightContent}>
             <p>
-              Merklise is one of the products of Block Ledger. Block Ledger was
+              Merklize is one of the products of Block Ledger. Block Ledger was
               established in March 2018 when two accountants were first
               introduced to bitcoin. They quickly discovered that this
               technology removed one of the oldest problems in accounting, the
               source of trust.
             </p>
             <p>
-              Merklise is a business technology consulting product with a strong
+              Merklize is a business technology consulting product with a strong
               foundation in the latest FinTech technology including AI,
-              Blockchain, Cloud and BigData.
+              Blockchain, Cloud, and BigData.
             </p>
           </div>
         </div>

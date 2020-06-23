@@ -51,15 +51,15 @@ const Oz = (props) => {
           </div>
           <div className={classes.RightContent}>
             <p>
-              Studies suggests that the peak period of mental ill-health is
+              Studies suggest that the peak period of mental ill-health is
               between the age of 12 and 25 years. According to them, university
               students are more vulnerable to high levels of distress than
               non-university population.
             </p>
             <p>
-              Researchers have provided evidence that mental health of students
-              has deteriorated over recent decades. There is higher level of
-              emotional and stress-related problems. The research draws
+              Researchers have provided evidence that the mental health of
+              students has deteriorated over recent decades. There is a higher
+              level of emotional and stress-related problems. The research draws
               attention to the fact that 70% of university students rate their
               mental health as “poor”.
             </p>
@@ -79,12 +79,12 @@ const Oz = (props) => {
             <li>
               As a student, I want to know the specific suburbs of places that
               match my cultural and social preferences so that I can stay
-              socially connected.
+              socially connected
             </li>
             <li>
               As a student, I want to know the most convenient suburb to live
               based on my hobbies so that it is easier for me to transition into
-              living in Australia.
+              living in Australia
             </li>
           </div>
         </div>
@@ -117,7 +117,7 @@ const Oz = (props) => {
 
             <li>
               As a student, I want to visit places in Melbourne that interests
-              me so that I will feel motivated to get involved into Australian
+              me so that I will feel motivated to get involved in Australian
               ways
             </li>
           </div>
@@ -134,7 +134,7 @@ const Oz = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              For the final application, I achieved to using React.js, Node.js,
+              For the final application, I achieved using React.js, Node.js,
               Restful API, Mapbox API, Google API to make a useful web
               application. I enjoy being challenged and engaging with projects,
               solving problems that require me to continuing to learn new and

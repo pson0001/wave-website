@@ -53,13 +53,15 @@ const PeerView = (props) => {
             </p>
             <p>
               This product designed and developed for academic staff to request
-              review from their peers. It digitalise the experience and process.
+              reviews from their peers. It digitalise the experience and
+              process.
             </p>
             <p>
               I am happy to say that my idea and design direction was approved
               for implementation. It was very exciting to see how the product
               evolved and improved with each update during a short time. The
-              final application has been implemented and delivered.
+              final application has been implemented and delivered. The final
+              application has been implemented and delivered.
             </p>
             <p>The final application has been implemented and delivered.</p>
             <p>
@@ -78,10 +80,11 @@ const PeerView = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              Understand target audience, their needs, habits and motication
+              Understand the target audience, their needs, habits, and
+              motivations
             </li>
             <li>Research market trends</li>
-            <li>Analysis essential information for upcoming works</li>
+            <li>Analysis of essential information for upcoming works</li>
             <li>Understand business objectives</li>
           </div>
         </div>
@@ -94,12 +97,12 @@ const PeerView = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              Analysis and document relevant data for business model and user's
-              needs
+              Analysis and document relevant data for the business model and
+              user's needs
             </li>
             <li>Process specifications for user personas and journey map</li>
-            <li>Analysis essential information for upcoming works</li>
-            <li>Brainstroming the first set of functional designs</li>
+            <li>Analysis of essential information for upcoming works</li>
+            <li>Brainstorming the first set of functional designs</li>
             <li>
               Creat draft information architecture for function design reference
             </li>
@@ -124,7 +127,7 @@ const PeerView = (props) => {
               Gathering feedback from users with various user testing methods
             </li>
             <li>
-              Keep iterate until the final proposal matchs business requirement
+              Keep iterate until the final proposal matches business requirement
               and user's needs
             </li>
           </div>

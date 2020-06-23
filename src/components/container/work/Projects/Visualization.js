@@ -52,10 +52,10 @@ const Visualization = (props) => {
               revolving around the reviews written by customers.
             </p>
             <p>
-              After exploration of the dataset, the most interesting is the
-              behavior of what women purchase and what they are talking about
+              After the exploration of the dataset, the most interesting is the
+              behavior of what women purchase, and what they are talking about
               are quick different. Also, the main purchasing age group is 30-40
-              and 40-50 instead of younger generation.
+              and 40-50 instead of the younger generation.
             </p>
           </div>
         </div>
@@ -70,14 +70,14 @@ const Visualization = (props) => {
           <div className={classes.RightContent}>
             <li>
               I started exploring the Global Trend of Ecommerce Fashion
-              Industry. As known as the digital innovation, rising
-              globalisation, and changes in consumer spending habits have
-              totally changed the fashion industry into a new era. The dataset
-              were categorised into different age group form 0-20 to 80-90.
+              Industry. As known as digital innovation, rising globalisation,
+              and changes in consumer spending habits have totally changed the
+              fashion industry into a new era. The dataset was categorised into
+              different age groups from 0-20 to 80-90.
             </li>
             <li>
-              This graph indicate the overall purchasing count of the dataset.
-              As we can see the highest bar cross all age group is product
+              This graph indicates the overall purchasing count of the dataset.
+              As we can see the highest bar cross all age group is the product
               "TOP".
             </li>
           </div>
@@ -95,17 +95,17 @@ const Visualization = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              0-20 ： Age Group 0-20 has the very small review amount. Dress is
-              the biggest proportion.
+              0-20 ： Age Group 0-20 has a very small review amount. The dress
+              is the biggest proportion
             </li>
             <li>
-              20-30 : The amount of review start to growing. As expected, Dress
-              still taken the first place.
+              20-30 : The amount of review starts to grow. As expected, Dress
+              still took the first place
             </li>
-            <li>30-40 : The amount of review reached peak.</li>
-            <li>40-50 : The amount of review decreasing.</li>
-            <li>50-60 : The key word Love taken the first place.</li>
-            <li>60-70 : Size become more important.</li>
+            <li>30-40 : The amount of review reached the peak</li>
+            <li>40-50 : The amount of review is decreasing</li>
+            <li>50-60 : The keyword Love has taken the first place</li>
+            <li>60-70 : Size becomes more important</li>
           </div>
         </div>
         <div className={classes.WorkImgSmall}>
