@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a12acd1c.chunk.css",
-    "main.js": "/static/js/main.7fc54fcd.chunk.js",
-    "main.js.map": "/static/js/main.7fc54fcd.chunk.js.map",
+    "main.css": "/static/css/main.53004d5d.chunk.css",
+    "main.js": "/static/js/main.34ccfdb0.chunk.js",
+    "main.js.map": "/static/js/main.34ccfdb0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cfd579cc.js",
     "runtime-main.js.map": "/static/js/runtime-main.cfd579cc.js.map",
-    "static/js/2.7c8ac6e5.chunk.js": "/static/js/2.7c8ac6e5.chunk.js",
-    "static/js/2.7c8ac6e5.chunk.js.map": "/static/js/2.7c8ac6e5.chunk.js.map",
+    "static/js/2.6194174c.chunk.js": "/static/js/2.6194174c.chunk.js",
+    "static/js/2.6194174c.chunk.js.map": "/static/js/2.6194174c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1d04670b3cf3d698af33b21fdf40126e.js": "/precache-manifest.1d04670b3cf3d698af33b21fdf40126e.js",
+    "precache-manifest.60c2ebb2298a51b5787b36a9c43d4570.js": "/precache-manifest.60c2ebb2298a51b5787b36a9c43d4570.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a12acd1c.chunk.css.map": "/static/css/main.a12acd1c.chunk.css.map",
-    "static/js/2.7c8ac6e5.chunk.js.LICENSE.txt": "/static/js/2.7c8ac6e5.chunk.js.LICENSE.txt",
+    "static/css/main.53004d5d.chunk.css.map": "/static/css/main.53004d5d.chunk.css.map",
+    "static/js/2.6194174c.chunk.js.LICENSE.txt": "/static/js/2.6194174c.chunk.js.LICENSE.txt",
     "static/media/Blockchain.jpg": "/static/media/Blockchain.fa2c8e05.jpg",
     "static/media/Consulting.png": "/static/media/Consulting.0d906a85.png",
     "static/media/Education.png": "/static/media/Education.34c39c42.png",
@@ -26,16 +26,21 @@
     "static/media/PeerView.png": "/static/media/PeerView.b9993f9f.png",
     "static/media/Project-elements.jpg": "/static/media/Project-elements.d7028e28.jpg",
     "static/media/Project-overview.jpg": "/static/media/Project-overview.c8ddb31e.jpg",
+    "static/media/Studyplan-hero.jpg": "/static/media/Studyplan-hero.2239f76f.jpg",
+    "static/media/Studyplan.png": "/static/media/Studyplan.2cdb797b.png",
     "static/media/Visualization-detail.jpg": "/static/media/Visualization-detail.ad7cd52c.jpg",
     "static/media/Visualization.jpg": "/static/media/Visualization.9d539d76.jpg",
+    "static/media/Wireframe.jpg": "/static/media/Wireframe.ea7f2704.jpg",
     "static/media/bar.jpg": "/static/media/bar.ebcb03ff.jpg",
     "static/media/global.jpg": "/static/media/global.9a0dd0ab.jpg",
-    "static/media/linkedin.png": "/static/media/linkedin.d8c3c2be.png"
+    "static/media/linkedin.png": "/static/media/linkedin.d8c3c2be.png",
+    "static/media/study-full.jpg": "/static/media/study-full.0d34c06f.jpg",
+    "static/media/studyplan-task.jpg": "/static/media/studyplan-task.52173157.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cfd579cc.js",
-    "static/js/2.7c8ac6e5.chunk.js",
-    "static/css/main.a12acd1c.chunk.css",
-    "static/js/main.7fc54fcd.chunk.js"
+    "static/js/2.6194174c.chunk.js",
+    "static/css/main.53004d5d.chunk.css",
+    "static/js/main.34ccfdb0.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b7a32e0a59a39be56b9f2eb8afdbe89",
+    "revision": "c3ad6124175358f880c2db309a388b6c",
     "url": "/index.html"
   },
   {
-    "revision": "2d7910fd40cb79f996d6",
-    "url": "/static/css/main.a12acd1c.chunk.css"
+    "revision": "e91d94a26ce3dc224b8e",
+    "url": "/static/css/main.53004d5d.chunk.css"
   },
   {
-    "revision": "04bbbbb020c0c4c79c1f",
-    "url": "/static/js/2.7c8ac6e5.chunk.js"
+    "revision": "da72ccbefdd9817a0be4",
+    "url": "/static/js/2.6194174c.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.7c8ac6e5.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.6194174c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2d7910fd40cb79f996d6",
-    "url": "/static/js/main.7fc54fcd.chunk.js"
+    "revision": "e91d94a26ce3dc224b8e",
+    "url": "/static/js/main.34ccfdb0.chunk.js"
   },
   {
     "revision": "05de7da12bca03eb18d3",
@@ -80,12 +80,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Project-overview.c8ddb31e.jpg"
   },
   {
+    "revision": "2239f76f6cf55a2be7bfa36f7f41cf79",
+    "url": "/static/media/Studyplan-hero.2239f76f.jpg"
+  },
+  {
+    "revision": "2cdb797b4db6db4e97e21f7c60b23e42",
+    "url": "/static/media/Studyplan.2cdb797b.png"
+  },
+  {
     "revision": "ad7cd52c0981b2d748e39b377b63686b",
     "url": "/static/media/Visualization-detail.ad7cd52c.jpg"
   },
   {
     "revision": "9d539d7699d67a8c42f35845ade01e39",
     "url": "/static/media/Visualization.9d539d76.jpg"
+  },
+  {
+    "revision": "ea7f27049bfbfba88a812cb4f1510f51",
+    "url": "/static/media/Wireframe.ea7f2704.jpg"
   },
   {
     "revision": "ebcb03ffa8063fb18035dde5cd54100f",
@@ -98,5 +110,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d8c3c2be2ace81a87679ff70fcdfc596",
     "url": "/static/media/linkedin.d8c3c2be.png"
+  },
+  {
+    "revision": "0d34c06f558f2f6e8709cc0ebfcda18b",
+    "url": "/static/media/study-full.0d34c06f.jpg"
+  },
+  {
+    "revision": "52173157a41c339a2f6ea944b5e12c76",
+    "url": "/static/media/studyplan-task.52173157.jpg"
   }
 ]);
