@@ -3,6 +3,8 @@ import classes from "./Work.module.scss"
 
 import { Link, useHistory } from "react-router-dom"
 import PeerviewImg from "../../../Assets/Image/PeerView.png"
+import StudyplanImg from "../../../Assets/Image/Studyplan.png"
+
 import OzWebsite from "../../../Assets/Image/OZ-home.png"
 import BlockChain from "../../../Assets/Image/Blockchain.jpg"
 import Visualization from "../../../Assets/Image/Visualization.jpg"
@@ -18,9 +20,25 @@ const Work = (props) => {
   useEffect(() => {
     setTimeout(() => setLoad(false), 600)
   }, [])
+  const history = useHistory()
+
+  const [openStudyplan, setOpenStudyplan] = useState(false)
+
+  const StudyplanOpenHandler = (e) => {
+    e.preventDefault()
+    const section = document.querySelector("#studyRef")
+    section.scrollIntoView({ behavior: "smooth", block: "start" })
+    setOpenStudyplan(true)
+    window.setTimeout(() => {
+      history.push({
+        pathname: "/work/studyplan",
+        state: { detail: true },
+      })
+    }, 1000)
+  }
 
   const [openPeerView, setOpenPeerView] = useState(false)
-  const history = useHistory()
+
   const PeerViewOpenHandler = (e) => {
     e.preventDefault()
     const section = document.querySelector("#peerRef")
@@ -81,27 +99,6 @@ const Work = (props) => {
     }, 1000)
   }
 
-  // const [openBeetle, setOpenBeetle] = useState(false)
-
-  // const BeetleHandler = (e) => {
-  //   e.preventDefault()
-  //   const section = document.querySelector("#beetleRef")
-  //   console.log(section.getBoundingClientRect().top)
-  //   section.scrollIntoView({ behavior: "smooth", block: "start" })
-  //   setOpenBeetle(true)
-  //   window.setTimeout(() => {
-  //     history.push({
-  //       pathname: "/work/beetle",
-  //       state: { detail: true },
-  //     })
-  //   }, 1000)
-  // }
-
-  const BacktoTop = () => {
-    const section = document.querySelector("#workRef")
-    console.log(section.getBoundingClientRect().top)
-    section.scrollIntoView({ behavior: "smooth", block: "start" })
-  }
   return (
     <div
       className={
@@ -118,6 +115,28 @@ const Work = (props) => {
           <p>i Think</p>
           <p>i Create</p>
           <p className={classes.ContentLabel}>UX / UI / Develop</p>
+        </div>
+        <div className={classes.ProjectContainer} id="studyRef">
+          <div
+            className={
+              openStudyplan
+                ? [classes.WorkImg, classes.WorkImgBg].join(" ")
+                : classes.WorkImg
+            }
+          >
+            <Link to="/work/studyplan" onClick={(e) => StudyplanOpenHandler(e)}>
+              <img
+                className={classes.CoverImg}
+                src={StudyplanImg}
+                alt="studyplan"
+              ></img>
+
+              <span className={classes.CoverText}>
+                Personal Study Plan is a digital solution that helps students
+                move their studies from on-campus to online due to COVID.
+              </span>
+            </Link>
+          </div>
         </div>
         <div className={classes.ProjectContainer} id="peerRef">
           <div

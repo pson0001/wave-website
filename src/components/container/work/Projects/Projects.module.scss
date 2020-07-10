@@ -16,7 +16,7 @@
     align-items: center;
     & .WorkImgBg {
       & img {
-        width: 80vw;
+        width: 70vw;
         transition: all 0.8s ease;
       }
     }
@@ -37,7 +37,7 @@
       align-items: center;
 
       & img {
-        width: 80vw;
+        width: 70vw;
         margin: 40px 0px;
       }
     }
@@ -78,6 +78,9 @@
         width: 60%;
         & p {
           font-weight: 400;
+          & a {
+            color: #15186d;
+          }
         }
         & li {
           font-weight: 400;

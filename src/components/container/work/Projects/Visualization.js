@@ -70,14 +70,14 @@ const Visualization = (props) => {
           <div className={classes.RightContent}>
             <li>
               I started exploring the Global Trend of Ecommerce Fashion
-              Industry. As known as digital innovation, rising globalisation,
-              and changes in consumer spending habits have totally changed the
-              fashion industry into a new era. The dataset was categorised into
-              different age groups from 0-20 to 80-90.
+              Industry, as known as digital innovation, and changes in consumer
+              spending habits that have changed the fashion industry. The
+              dataset was categorised into different age groups from 0-20 to
+              80-90.
             </li>
             <li>
               This graph indicates the overall purchasing count of the dataset.
-              As we can see the highest bar cross all age group is the product
+              We can see the highest bar cross all age group is the product
               "TOP".
             </li>
           </div>
@@ -95,16 +95,16 @@ const Visualization = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              0-20 ： Age Group 0-20 has a very small review amount. The dress
-              is the biggest proportion
+              0-20 ：Age Group 0-20 has a very small review amount. The dress is
+              the biggest proportion
             </li>
             <li>
               20-30 : The amount of review starts to grow. As expected, Dress
-              still took the first place
+              still took first place
             </li>
             <li>30-40 : The amount of review reached the peak</li>
-            <li>40-50 : The amount of review is decreasing</li>
-            <li>50-60 : The keyword Love has taken the first place</li>
+            <li>40-50 : The amount of review are decreasing</li>
+            <li>50-60 : The keyword Love has taken first place</li>
             <li>60-70 : Size becomes more important</li>
           </div>
         </div>

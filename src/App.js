@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { BrowserRouter as Router, useLocation } from "react-router-dom"
+import { BrowserRouter as Router, Redirect } from "react-router-dom"
 import Navigation from "./components/navigation/Navigation"
 import Container from "./components/container/Container"
 import classes from "./App.module.scss"
@@ -20,8 +20,6 @@ function App() {
   }
 
   const pathnameHandler = (pathname) => {
-    console.log(pathname)
-
     switch (pathname) {
       case "/":
         setTimeout(() => setActiveWave(true), 600)
@@ -29,25 +27,53 @@ function App() {
       case "/about":
         setTimeout(() => setActiveWave(false), 0)
         break
+      case "/about/":
+        setTimeout(() => setActiveWave(false), 0)
+        break
       case "/work":
+        setTimeout(() => setActiveWave(false), 0)
+        break
+      case "/work/":
+        setTimeout(() => setActiveWave(false), 0)
+        break
+      case "/work/studyplan":
+        setTimeout(() => setActiveWave(false), 0)
+        break
+      case "/work/studyplan/":
         setTimeout(() => setActiveWave(false), 0)
         break
       case "/work/peerview":
         setTimeout(() => setActiveWave(false), 0)
         break
+      case "/work/peerview/":
+        setTimeout(() => setActiveWave(false), 0)
+        break
       case "/work/oz":
+        setTimeout(() => setActiveWave(false), 0)
+        break
+      case "/work/oz/":
         setTimeout(() => setActiveWave(false), 0)
         break
       case "/work/blockchain":
         setTimeout(() => setActiveWave(false), 0)
         break
+      case "/work/blockchain/":
+        setTimeout(() => setActiveWave(false), 0)
+        break
       case "/work/visualization":
+        setTimeout(() => setActiveWave(false), 0)
+        break
+      case "/work/visualization/":
         setTimeout(() => setActiveWave(false), 0)
         break
       case "/pingme":
         setTimeout(() => setActiveWave(false), 0)
         break
+      case "/pingme/":
+        setTimeout(() => setActiveWave(false), 0)
+        break
       default:
+        return <Redirect to="/"></Redirect>
     }
   }
 
@@ -105,7 +131,9 @@ function App() {
         }
       >
         <p className={classes.Name}>Ping Song</p>
-        <p className={classes.Paragraph}>I am a UX designer.</p>
+        <p className={classes.Paragraph}>
+          I am a designer, who draws and codes.
+        </p>
       </div>
     </Router>
   )

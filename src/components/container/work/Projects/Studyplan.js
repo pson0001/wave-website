@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react"
-import PeerviewImg from "../../../../Assets/Image/PeerView.png"
-import Mockup from "../../../../Assets/Image/Mockup.jpg"
-import Overview from "../../../../Assets/Image/Project-overview.jpg"
-import Elements from "../../../../Assets/Image/Project-elements.jpg"
-import Instructions from "../../../../Assets/Image/Instruction.jpg"
+import StudyplanImg from "../../../../Assets/Image/Studyplan.png"
+import Task from "../../../../Assets/Image/studyplan-task.jpg"
+import Wireframe from "../../../../Assets/Image/Wireframe.jpg"
+import Hero from "../../../../Assets/Image/Studyplan-hero.jpg"
+import StydyplanFull from "../../../../Assets/Image/study-full.jpg"
 import classes from "./Projects.module.scss"
 import { Link } from "react-router-dom"
 
@@ -35,12 +35,12 @@ const PeerView = (props) => {
     >
       <div className={classes.ProjectContainer}>
         <div className={classes.WorkImgBg}>
-          <img src={PeerviewImg} alt="Peerview"></img>
+          <img src={StudyplanImg} alt="StudyplanImg"></img>
         </div>
         <div className={classes.ContentContainer}>
           <div className={classes.LeftContent}>
             <p className={classes.Label}>PROJECT NAME</p>
-            <p className={classes.Name}>PeerView</p>
+            <p className={classes.Name}>Personal Study Plan</p>
             <p className={classes.Label}>MY ROLE</p>
             <p className={classes.SubName}>Creative Direction</p>
             <p className={classes.SubName}>UX / UI</p>
@@ -49,25 +49,21 @@ const PeerView = (props) => {
           <div className={classes.RightContent}>
             <p>
               Monash University is one of Australia's leading universities and
-              ranks among the world's top 100. We help change lives through
-              research and education.
+              ranks among the world's top 100.
             </p>
             <p>
-              This product is designed and developed for academic staff to
-              request reviews from their peers. It digitizes the experience of
-              the review process.
+              This product is designed and developed to help students move their
+              studies from on-campus to online due to COVID.
             </p>
             <p>
-              I am happy to say that my ideas and design direction were approved
-              for implementation. It was very exciting to see how the product
-              evolved and improved with each iteration in a short time.
+              It was an urgent task. The requirements were to understand
+              business needs and design user interface options in one day. By
+              achieving the task, I have saved valuable time for data collection
+              from faculty and development.
             </p>
-            <p>The final application has been implemented and delivered.</p>
             <p>
-              View at{" "}
-              <a href="https://peerview.monash/" target="_blank">
-                https://peerview.monash/
-              </a>
+              The final application has been implemented and delivered to help
+              thousands of students.
             </p>
           </div>
         </div>
@@ -79,12 +75,10 @@ const PeerView = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              Understand the target audience, their needs, habits, and
-              motivations
+              Meet with business owner and understand the requirement and data
+              structure
             </li>
-            <li>Research market trends</li>
             <li>Analyse essential information for upcoming works</li>
-            <li>Understand business objectives</li>
           </div>
         </div>
         <div className={classes.SectionLine}></div>
@@ -95,17 +89,17 @@ const PeerView = (props) => {
             <p className={classes.SubName}>& Design Thinking</p>
           </div>
           <div className={classes.RightContent}>
-            <li>
-              Analyse and document relevant data for the business model and
-              user's needs
-            </li>
-            <li>Process specifications for user personas and journey map</li>
-
-            <li>Brainstorming the first set of functional designs</li>
-            <li>
-              Creat draft information architecture for function design reference
-            </li>
+            <li>Process specifications for user goals and task flow</li>
+            <li>Creat wireframe for function design reference</li>
           </div>
+        </div>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
+          <img src={Task} alt="Taskflow" style={{ width: "60vw" }}></img>
+          <img
+            src={Wireframe}
+            alt="Project-overview"
+            style={{ width: "60vw" }}
+          ></img>
         </div>
         <div className={classes.SectionLine}></div>
         <div className={classes.ContentContainer}>
@@ -119,24 +113,12 @@ const PeerView = (props) => {
               Design patterns to meet the business goals and user needs into an
               enjoyable experience
             </li>
-            <li>
-              Wrap collected information and data up into a visual concept
-            </li>
-            <li>
-              Gathering feedback from users with various user testing methods
-            </li>
-            <li>
-              Keep iterating until the final proposal matches business
-              requirements and user's needs
-            </li>
           </div>
         </div>
         <div className={classes.SectionLine}></div>
         <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
-          <img src={Mockup} alt="Project-overview"></img>
-          <img src={Overview} alt="Project-overview"></img>
-          <img src={Elements} alt="Project-overview"></img>
-          <img src={Instructions} alt="Project-overview"></img>
+          <img src={Hero} alt="Project-overview"></img>
+          <img src={StydyplanFull} alt="Project-overview"></img>
         </div>
         <div className={classes.SectionLine}></div>
         <div className={classes.NavigateButton}>

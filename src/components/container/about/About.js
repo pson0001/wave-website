@@ -30,8 +30,8 @@ const About = (props) => {
           background.
         </p>
         <p>
-          I believe with the UX superpower that gives me the ability to put
-          myself in another person’s shoes, to create meaningful products.
+          I believe the UX methodology gives me the ability to put myself in
+          another’s shoes to create meaningful products.
         </p>
         <p>
           I strive to create products/ideas/components that are simple, target
@@ -50,12 +50,12 @@ const About = (props) => {
             <div className={classes.RightContent}>
               <p>Front end Developer/UX Designer (Monash University)</p>
               <p>
-                Research, architect and develop applications that provide
+                Research, architect and develop applications that provides
                 meaningful and relevant experiences and create engaging user
-                interface to users
+                interfaces
               </p>
               <p>
-                Contribute to the re-imagination and improvement of multiple
+                Contributed to the re-imagination and improvement of multiple
                 Monash applications
               </p>
               <p>
