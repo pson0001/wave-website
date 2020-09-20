@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "16ce70c3cc63bc7216d0f8db1865f851",
+    "revision": "47803b23b621dcd626fb70e01e813332",
     "url": "/index.html"
   },
   {
-    "revision": "0d852dda67cdcb32bb29",
+    "revision": "06627e87f1783586643d",
     "url": "/static/css/main.70fa5fda.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.6194174c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0d852dda67cdcb32bb29",
-    "url": "/static/js/main.f9a70092.chunk.js"
+    "revision": "06627e87f1783586643d",
+    "url": "/static/js/main.fda78747.chunk.js"
   },
   {
     "revision": "05de7da12bca03eb18d3",
@@ -96,8 +96,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Visualization.9d539d76.jpg"
   },
   {
-    "revision": "ea7f27049bfbfba88a812cb4f1510f51",
-    "url": "/static/media/Wireframe.ea7f2704.jpg"
+    "revision": "6d60e3dfbdf4ea77fb2976acc0e9c14a",
+    "url": "/static/media/Wireframe.6d60e3df.jpg"
   },
   {
     "revision": "ebcb03ffa8063fb18035dde5cd54100f",
@@ -116,7 +116,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/study-full.0d34c06f.jpg"
   },
   {
-    "revision": "52173157a41c339a2f6ea944b5e12c76",
-    "url": "/static/media/studyplan-task.52173157.jpg"
+    "revision": "dc4076a80342a67109d952750d6c07d2",
+    "url": "/static/media/studyplan-task.dc4076a8.jpg"
   }
 ]);
