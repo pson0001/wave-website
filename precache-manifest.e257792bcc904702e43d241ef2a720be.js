@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6b86a590eaf2b9c09fe61fbd11b5c0e",
+    "revision": "76ab72fa76ad2e37ff600aab0ac1e027",
     "url": "/index.html"
   },
   {
-    "revision": "4455704d5ec6c95369c0",
-    "url": "/static/css/main.0eaf7c1e.chunk.css"
+    "revision": "b00d5d4a8a7e2aea60e5",
+    "url": "/static/css/main.ce8d986a.chunk.css"
   },
   {
     "revision": "307acd94c8e93bc7d22e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.55ed6d04.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4455704d5ec6c95369c0",
-    "url": "/static/js/main.d4a5a3c6.chunk.js"
+    "revision": "b00d5d4a8a7e2aea60e5",
+    "url": "/static/js/main.93a647b2.chunk.js"
   },
   {
     "revision": "05de7da12bca03eb18d3",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fa2c8e055ef58fb1c673f332ab873df4",
     "url": "/static/media/Blockchain.fa2c8e05.jpg"
+  },
+  {
+    "revision": "4e862bd1dcb1bcfe26386385937b2271",
+    "url": "/static/media/Blue.4e862bd1.svg"
   },
   {
     "revision": "0d906a854ad455e9ffa69c2891ebbfc1",
@@ -72,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/PeerView.b9993f9f.png"
   },
   {
+    "revision": "7ad23599d027ed1e1ad113a235365389",
+    "url": "/static/media/Pink.7ad23599.svg"
+  },
+  {
     "revision": "d7028e285e15deea4b281794c5420c76",
     "url": "/static/media/Project-elements.d7028e28.jpg"
   },
@@ -98,6 +106,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6d60e3dfbdf4ea77fb2976acc0e9c14a",
     "url": "/static/media/Wireframe.6d60e3df.jpg"
+  },
+  {
+    "revision": "914d4b773103085978479dab6917dfa0",
+    "url": "/static/media/Yellow.914d4b77.svg"
   },
   {
     "revision": "ebcb03ffa8063fb18035dde5cd54100f",
