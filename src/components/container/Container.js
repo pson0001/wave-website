@@ -6,6 +6,8 @@ import About from "./about/About"
 import Work from "./work/Work"
 import PingMe from "./pingMe/PingMe"
 import PeerView from "./work/Projects/PeerView"
+import Checkin from "./work/Projects/Checkin"
+
 import Studyplan from "./work/Projects/Studyplan"
 import Oz from "./work/Projects/Oz"
 import Blockchain from "./work/Projects/Blockchain"
@@ -25,6 +27,11 @@ const Container = (props) => {
           exact
           path="/work"
           render={() => <Work openMenu={props.openMenu}></Work>}
+        ></Route>
+        <Route
+          exact
+          path="/work/checkin"
+          render={() => <Checkin openMenu={props.openMenu}></Checkin>}
         ></Route>
         <Route
           exact

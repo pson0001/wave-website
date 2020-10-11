@@ -58,8 +58,7 @@ const PeerView = (props) => {
             <p>
               It was an urgent task. The requirements were to understand
               business needs and design user interface options in one day. By
-              achieving the task, I have saved valuable time for data collection
-              from faculty and development.
+              achieving this task, I have saved valuable time for development.
             </p>
             <p>
               The final application has been implemented and delivered to help
@@ -75,10 +74,15 @@ const PeerView = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              Meet with business owner and understand the requirement and data
-              structure
+              The biggest challenge was to understand and also build the
+              requirements for the application.
             </li>
-            <li>Analyse essential information for upcoming works</li>
+            <li>
+              Meet with business owners and understand the requirement and data
+              structure. As the product is for students and faculties, it had to
+              be a usable product with scalability in mind.
+            </li>
+            <li>Analyse essential information for upcoming works.</li>
           </div>
         </div>
         <div className={classes.SectionLine}></div>
@@ -110,8 +114,8 @@ const PeerView = (props) => {
           </div>
           <div className={classes.RightContent}>
             <li>
-              Design patterns to meet the business goals and user needs into an
-              enjoyable experience
+              The final product (V1) meets the business goals and what users
+              need into an enjoyable experience in a short time.
             </li>
           </div>
         </div>
@@ -122,12 +126,12 @@ const PeerView = (props) => {
         </div>
         <div className={classes.SectionLine}></div>
         <div className={classes.NavigateButton}>
-          <Link to="/work" className={classes.Previous}>
+          <Link to="/work/checkin" className={classes.Previous}>
             <span className={classes.Arrow}></span>
             <span className={classes.ArrowLine}></span>
-            <span className={classes.ArrowText}>Back to work</span>
+            <span className={classes.ArrowText}>Previous</span>
           </Link>
-          <Link to="/work/oz" className={classes.Next}>
+          <Link to="/work/peerview" className={classes.Next}>
             <span className={classes.ArrowText}>Next</span>
             <span className={classes.ArrowLine}></span>
             <span className={classes.Arrow}></span>

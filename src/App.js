@@ -20,60 +20,31 @@ function App() {
   }
 
   const pathnameHandler = (pathname) => {
-    switch (pathname) {
-      case "/":
-        setTimeout(() => setActiveWave(true), 600)
-        break
-      case "/about":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/about/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/studyplan":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/studyplan/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/peerview":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/peerview/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/oz":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/oz/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/blockchain":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/blockchain/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/visualization":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/work/visualization/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/pingme":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      case "/pingme/":
-        setTimeout(() => setActiveWave(false), 0)
-        break
-      default:
-        return <Redirect to="/"></Redirect>
+    if (pathname === "/") {
+      setTimeout(() => setActiveWave(true), 600)
+    } else if (
+      pathname === "/about" ||
+      pathname === "/about/" ||
+      pathname === "/work" ||
+      pathname === "/work/" ||
+      pathname === "/work/checkin" ||
+      pathname === "/work/checkin/" ||
+      pathname === "/work/studyplan" ||
+      pathname === "/work/studyplan/" ||
+      pathname === "/work/peerview" ||
+      pathname === "/work/peerview/" ||
+      pathname === "/work/oz" ||
+      pathname === "/work/oz/" ||
+      pathname === "/work/blockchain" ||
+      pathname === "/work/blockchain/" ||
+      pathname === "/work/visualization" ||
+      pathname === "/work/visualization/" ||
+      pathname === "/pingme" ||
+      pathname === "/pingme/"
+    ) {
+      setTimeout(() => setActiveWave(false), 0)
+    } else {
+      return <Redirect to="/"></Redirect>
     }
   }
 

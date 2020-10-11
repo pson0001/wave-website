@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react"
-import classes from "./Work.module.scss"
+import React, { useState, useEffect } from 'react'
+import classes from './Work.module.scss'
 
-import { Link, useHistory } from "react-router-dom"
-import PeerviewImg from "../../../Assets/Image/PeerView.png"
-import StudyplanImg from "../../../Assets/Image/Studyplan.png"
+import { Link, useHistory } from 'react-router-dom'
+import CheckinImg from '../../../Assets/Image/checkin.jpg'
 
-import OzWebsite from "../../../Assets/Image/OZ-home.png"
-import BlockChain from "../../../Assets/Image/Blockchain.jpg"
-import Visualization from "../../../Assets/Image/Visualization.jpg"
+import PeerviewImg from '../../../Assets/Image/PeerView.png'
+import StudyplanImg from '../../../Assets/Image/Studyplan.png'
+
+import OzWebsite from '../../../Assets/Image/OZ-home.png'
+import BlockChain from '../../../Assets/Image/Blockchain.jpg'
+import Visualization from '../../../Assets/Image/Visualization.jpg'
 
 const Work = (props) => {
   const [load, setLoad] = useState(true)
@@ -22,16 +24,31 @@ const Work = (props) => {
   }, [])
   const history = useHistory()
 
+  const [openCheckIn, setOpenCheckIn] = useState(false)
+
+  const CheckinOpenHandler = (e) => {
+    e.preventDefault()
+    const section = document.querySelector('#checkinRef')
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    setOpenCheckIn(true)
+    window.setTimeout(() => {
+      history.push({
+        pathname: '/work/checkin',
+        state: { detail: true },
+      })
+    }, 1000)
+  }
+
   const [openStudyplan, setOpenStudyplan] = useState(false)
 
   const StudyplanOpenHandler = (e) => {
     e.preventDefault()
-    const section = document.querySelector("#studyRef")
-    section.scrollIntoView({ behavior: "smooth", block: "start" })
+    const section = document.querySelector('#studyRef')
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenStudyplan(true)
     window.setTimeout(() => {
       history.push({
-        pathname: "/work/studyplan",
+        pathname: '/work/studyplan',
         state: { detail: true },
       })
     }, 1000)
@@ -40,13 +57,14 @@ const Work = (props) => {
   const [openPeerView, setOpenPeerView] = useState(false)
 
   const PeerViewOpenHandler = (e) => {
-    e.preventDefault()
-    const section = document.querySelector("#peerRef")
-    section.scrollIntoView({ behavior: "smooth", block: "start" })
+
+     e.preventDefault()
+    const section = document.querySelector('#peerRef')
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenPeerView(true)
     window.setTimeout(() => {
       history.push({
-        pathname: "/work/peerview",
+        pathname: '/work/peerview',
         state: { detail: true },
       })
     }, 1000)
@@ -55,13 +73,13 @@ const Work = (props) => {
 
   const OzOpenHandler = (e) => {
     e.preventDefault()
-    const section = document.querySelector("#ozRef")
+    const section = document.querySelector('#ozRef')
     console.log(section.getBoundingClientRect().top)
-    section.scrollIntoView({ behavior: "smooth", block: "start" })
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenOz(true)
     window.setTimeout(() => {
       history.push({
-        pathname: "/work/oz",
+        pathname: '/work/oz',
         state: { detail: true },
       })
     }, 1000)
@@ -71,13 +89,13 @@ const Work = (props) => {
 
   const BlockOpenHandler = (e) => {
     e.preventDefault()
-    const section = document.querySelector("#blockchainRef")
+    const section = document.querySelector('#blockchainRef')
     console.log(section.getBoundingClientRect().top)
-    section.scrollIntoView({ behavior: "smooth", block: "start" })
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenBlockChain(true)
     window.setTimeout(() => {
       history.push({
-        pathname: "/work/blockchain",
+        pathname: '/work/blockchain',
         state: { detail: true },
       })
     }, 1000)
@@ -87,13 +105,13 @@ const Work = (props) => {
 
   const VisualizationHandler = (e) => {
     e.preventDefault()
-    const section = document.querySelector("#visualizationRef")
+    const section = document.querySelector('#visualizationRef')
     console.log(section.getBoundingClientRect().top)
-    section.scrollIntoView({ behavior: "smooth", block: "start" })
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenVisualization(true)
     window.setTimeout(() => {
       history.push({
-        pathname: "/work/visualization",
+        pathname: '/work/visualization',
         state: { detail: true },
       })
     }, 1000)
@@ -104,9 +122,9 @@ const Work = (props) => {
       className={
         menu
           ? load
-            ? [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
+            ? [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
             : classes.WorkContainer
-          : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
+          : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
       }
     >
       <div className={classes.WorkContentContainer} id="workRef">
@@ -116,11 +134,34 @@ const Work = (props) => {
           <p>i Create</p>
           <p className={classes.ContentLabel}>UX / UI / Develop</p>
         </div>
+
+        <div className={classes.ProjectContainer} id="checkinRef">
+          <div
+            className={
+              openCheckIn
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
+                : classes.WorkImg
+            }
+          >
+            <Link to="/work/checkin" onClick={(e) => CheckinOpenHandler(e)}>
+              <img
+                className={classes.CoverImg}
+                src={CheckinImg}
+                alt="CheckinImg"
+              ></img>
+
+              <span className={classes.CoverText}>
+                A web application supports Monash University community to return
+                to campus safely.
+              </span>
+            </Link>
+          </div>
+        </div>
         <div className={classes.ProjectContainer} id="studyRef">
           <div
             className={
               openStudyplan
-                ? [classes.WorkImg, classes.WorkImgBg].join(" ")
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
                 : classes.WorkImg
             }
           >
@@ -142,7 +183,7 @@ const Work = (props) => {
           <div
             className={
               openPeerView
-                ? [classes.WorkImg, classes.WorkImgBg].join(" ")
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
                 : classes.WorkImg
             }
           >
@@ -164,7 +205,7 @@ const Work = (props) => {
           <div
             className={
               openOz
-                ? [classes.WorkImg, classes.WorkImgBg].join(" ")
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
                 : classes.WorkImg
             }
           >
@@ -187,7 +228,7 @@ const Work = (props) => {
           <div
             className={
               openBlockChain
-                ? [classes.WorkImg, classes.WorkImgBg].join(" ")
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
                 : classes.WorkImg
             }
           >
@@ -208,7 +249,7 @@ const Work = (props) => {
           <div
             className={
               openVisualization
-                ? [classes.WorkImg, classes.WorkImgBg].join(" ")
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
                 : classes.WorkImg
             }
           >
@@ -230,7 +271,7 @@ const Work = (props) => {
         </div>
         <div className={classes.NavigateButton}>
           <div className={classes.Label}>
-            Need a UX/UI designer & Front end Developer?
+            Need a UX UI designer / Front end Developer?
           </div>
           <Link to="/pingme">
             <div className={classes.CtaButton}>

@@ -9,60 +9,113 @@
   transition: all 0.4s ease;
   color: #15186d;
   font-weight: 300;
+
   & .AboutContentContainer {
-    width: 60%;
+    width: 50%;
     margin: 200px auto;
-    & .ParaTitle {
-      font-family: "Lobster";
-      color: #171caf;
-      font-size: 28px;
+
+    p {
+      margin-bottom: 20px;
+      line-height: 36px;
+    }
+
+    .Blue {
+      position: relative;
+      background-repeat: no-repeat;
+
       &:after {
-        content: "";
-        margin-top: -12px;
-        margin-left: 3px;
-        display: block;
-        width: 200px;
-        height: 8px;
-        background-color: #f7c969;
-        z-index: -1;
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: -17px;
+        left: -5px;
+        height: 100px;
+        width: 130px;
+        background-image: url(../../../Assets/Image/Blue.svg);
+        background-repeat: no-repeat;
       }
     }
+
+
+    .Yellow {
+      white-space: nowrap;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 3px;
+        height: 100px;
+        width: 300px;
+        background-image: url(../../../Assets/Image/Yellow.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    .Pink {
+      white-space: nowrap;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 3px;
+        height: 100px;
+        width: 300px;
+        background-image: url(../../../Assets/Image/Pink.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    & .ParaTitle {
+      font-family: 'Lobster';
+      color: #171caf;
+      font-size: 28px;
+      margin-bottom: 50px;
+    }
+
     & .AboutParagraphContainer {
       margin-top: 80px;
+
       & .SubParaTitle {
         font-size: 20px;
-        font-family: "Lobster";
+        font-family: 'Lobster';
         color: #171caf;
-        &:after {
-          content: "";
-          margin-top: -10px;
-          margin-left: 60px;
-          display: block;
-          width: 160px;
-          height: 6px;
-          background-color: #f7c969;
-          z-index: -1;
-        }
+
+
       }
+
       & .ContentContainer {
         display: flex;
         flex-direction: row;
+
         & .leftContent {
           padding-right: 10px;
           width: 30%;
         }
+
         & .RightContent {
           font-size: 14px;
+
           width: 70%;
+
+
           p:first-child {
             font-weight: 400;
             font-size: 16px;
           }
+
+
         }
       }
     }
   }
 }
+
 .AboutContainerDisabled {
   opacity: 0;
 }
