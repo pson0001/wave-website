@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react"
-import { Link, useLocation } from "react-router-dom"
-import classes from "./Navigation.module.scss"
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import classes from './Navigation.module.scss'
 const Navigation = (props) => {
   const [menu, setMenu] = useState(false)
   const [activeHome, setActiveHome] = useState(false)
@@ -17,92 +17,92 @@ const Navigation = (props) => {
     setMenu(false)
     props.pathnameHandler(location.pathname)
     switch (location.pathname) {
-      case "/":
+      case '/':
         setActiveHome(true)
         setActiveAbout(false)
         setActiveWork(false)
         setActivePingMe(false)
         break
-      case "/about":
+      case '/about':
         setActiveHome(false)
         setActiveAbout(true)
         setActiveWork(false)
         setActivePingMe(false)
         break
-      case "/about/":
+      case '/about/':
         setActiveHome(false)
         setActiveAbout(true)
         setActiveWork(false)
         setActivePingMe(false)
         break
-      case "/work":
+      case '/work':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/":
+      case '/work/':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/peerview":
+      case '/work/peerview':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/oz":
+      case '/work/oz':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/blockchain":
+      case '/work/blockchain':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/visualization":
+      case '/work/visualization':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
 
-      case "/work/peerview/":
+      case '/work/peerview/':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/oz/":
+      case '/work/oz/':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/blockchain/":
+      case '/work/blockchain/':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/work/visualization/":
+      case '/work/visualization/':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(true)
         setActivePingMe(false)
         break
-      case "/pingme":
+      case '/pingme':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(false)
         setActivePingMe(true)
         break
-      case "/pingme/":
+      case '/pingme/':
         setActiveHome(false)
         setActiveAbout(false)
         setActiveWork(false)
@@ -118,25 +118,28 @@ const Navigation = (props) => {
         <div className={classes.Logo}>
           <Link to="/">P</Link>
         </div>
-        <div
-          className={
-            menu
-              ? [classes.Burger, classes.BurgerActive].join(" ")
-              : classes.Burger
-          }
-          onClick={() => {
-            setMenu(!menu)
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className={classes.BurgerContainer}>
+          <span>Menu</span>
+          <div
+            className={
+              menu
+                ? [classes.Burger, classes.BurgerActive].join(' ')
+                : classes.Burger
+            }
+            onClick={() => {
+              setMenu(!menu)
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
       <div
         className={
           menu
-            ? [classes.MenuContainer, classes.MenuContainerActive].join(" ")
+            ? [classes.MenuContainer, classes.MenuContainerActive].join(' ')
             : classes.MenuContainer
         }
       >
@@ -175,7 +178,7 @@ const Navigation = (props) => {
             </div>
             <div
               className={activeWork ? classes.ActiveHome : classes.Home}
-              style={{ backgroundColor: " #e8989f" }}
+              style={{ backgroundColor: ' #e8989f' }}
             ></div>
           </div>
         </Link>

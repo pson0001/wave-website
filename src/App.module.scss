@@ -13,12 +13,12 @@
   & .Name {
     margin-top: 30px;
     margin-bottom: 0px;
-    font-family: "Lobster";
+    font-family: 'Lobster';
     font-size: 66px;
   }
 
   & .Paragraph {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
   }
   &.IntroContainerLoaded {
@@ -290,6 +290,33 @@
       width: 3000px;
       height: 3000px;
       left: 5%;
+    }
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .WaveContainer {
+    & .WaveOne {
+      width: 3200px;
+      height: 3200px;
+
+      left: -10%;
+    }
+    & .WaveMenu {
+      width: 100vw;
+      height: 100vh;
+
+      left: 0%;
+    }
+    & .WaveTwo {
+      width: 3200px;
+      height: 3200px;
+      left: -35%;
+    }
+    & .WaveThree {
+      width: 3200px;
+      height: 3200px;
+      left: 15%;
     }
   }
 }

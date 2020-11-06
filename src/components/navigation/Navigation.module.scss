@@ -11,13 +11,20 @@
     justify-content: space-between;
     & .Logo {
       a {
-        font-family: "Lobster";
+        font-family: 'Lobster';
         font-size: 32px;
         color: #171caf;
         text-decoration: none;
       }
     }
-    & .Burger {
+    .BurgerContainer {
+      display: flex;
+      color: #171caf;
+      span {
+        margin-right: 20px;
+      }
+    }
+    .Burger {
       cursor: pointer;
       span {
         display: block;
@@ -62,7 +69,7 @@
     & a {
       color: white;
       text-decoration: none;
-      font-family: "Lobster";
+      font-family: 'Lobster';
       font-size: 32px;
       & .MenuItemContainer {
         display: flex;
