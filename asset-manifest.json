@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1804967e.chunk.css",
+    "main.css": "/static/css/main.b7ed6505.chunk.css",
     "main.js": "/static/js/main.0693aff9.chunk.js",
     "main.js.map": "/static/js/main.0693aff9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.cfd579cc.js",
@@ -8,9 +8,9 @@
     "static/js/2.55ed6d04.chunk.js": "/static/js/2.55ed6d04.chunk.js",
     "static/js/2.55ed6d04.chunk.js.map": "/static/js/2.55ed6d04.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.14de43dcf5a54448b70569a65ff29363.js": "/precache-manifest.14de43dcf5a54448b70569a65ff29363.js",
+    "precache-manifest.d81757eec15b87fc7b4568e814249741.js": "/precache-manifest.d81757eec15b87fc7b4568e814249741.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1804967e.chunk.css.map": "/static/css/main.1804967e.chunk.css.map",
+    "static/css/main.b7ed6505.chunk.css.map": "/static/css/main.b7ed6505.chunk.css.map",
     "static/js/2.55ed6d04.chunk.js.LICENSE.txt": "/static/js/2.55ed6d04.chunk.js.LICENSE.txt",
     "static/media/Blockchain.jpg": "/static/media/Blockchain.fa2c8e05.jpg",
     "static/media/About.module.scss": "/static/media/Yellow.914d4b77.svg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.cfd579cc.js",
     "static/js/2.55ed6d04.chunk.js",
-    "static/css/main.1804967e.chunk.css",
+    "static/css/main.b7ed6505.chunk.css",
     "static/js/main.0693aff9.chunk.js"
   ]
 }
