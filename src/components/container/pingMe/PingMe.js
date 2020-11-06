@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
-import classes from "./PingMe.module.scss"
-import email from "../../../Assets/Image/email.png"
-import github from "../../../Assets/Image/github.png"
-import linkedin from "../../../Assets/Image/linkedin.png"
+import React, { useState, useEffect } from 'react'
+import classes from './PingMe.module.scss'
+import email from '../../../Assets/Image/email.png'
+import github from '../../../Assets/Image/github.png'
+import linkedin from '../../../Assets/Image/linkedin.png'
 
 const PingMe = (props) => {
   const [load, setLoad] = useState(true)
@@ -20,10 +20,10 @@ const PingMe = (props) => {
         menu
           ? load
             ? [classes.PingMeContainer, classes.PingMeContainerDisabled].join(
-                " "
+                ' '
               )
             : classes.PingMeContainer
-          : [classes.PingMeContainer, classes.PingMeContainerDisabled].join(" ")
+          : [classes.PingMeContainer, classes.PingMeContainerDisabled].join(' ')
       }
     >
       <div className={classes.ContentContainer}>
@@ -49,7 +49,11 @@ const PingMe = (props) => {
               <img src={github} alt="email"></img>
             </span>
             <p>
-              <a href="https://github.com/pson0001" target="_blank">
+              <a
+                href="https://github.com/pson0001"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 github.com/pson0001
               </a>
             </p>
@@ -62,6 +66,7 @@ const PingMe = (props) => {
               <a
                 href="https://www.linkedin.com/in/ping-song-pson0001/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 linkedin.com/in/ping-song-pson0001/
               </a>

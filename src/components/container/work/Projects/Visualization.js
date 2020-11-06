@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react"
-import VisualizationImg from "../../../../Assets/Image/Visualization.jpg"
-import VisualizationFinal from "../../../../Assets/Image/Visualization-detail.jpg"
-import BarChart from "../../../../Assets/Image/bar.jpg"
-import LineChart from "../../../../Assets/Image/global.jpg"
+import React, { useState, useEffect } from 'react'
+import VisualizationImg from '../../../../Assets/Image/Visualization.jpg'
+import VisualizationFinal from '../../../../Assets/Image/Visualization-detail.jpg'
+import BarChart from '../../../../Assets/Image/bar.jpg'
+import LineChart from '../../../../Assets/Image/global.jpg'
 
-import classes from "./Projects.module.scss"
-import { Link } from "react-router-dom"
+import classes from './Projects.module.scss'
+import { Link } from 'react-router-dom'
 
 const Visualization = (props) => {
-  console.log(props)
   const [load, setLoad] = useState(true)
   const [menu, setMenu] = useState(true)
 
@@ -29,8 +28,8 @@ const Visualization = (props) => {
         load
           ? menu
             ? classes.WorkContainer
-            : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
-          : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
+            : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
+          : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
       }
     >
       <div className={classes.ProjectContainer}>

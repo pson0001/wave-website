@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react"
-import PeerviewImg from "../../../../Assets/Image/PeerView.png"
-import Mockup from "../../../../Assets/Image/Mockup.jpg"
-import Overview from "../../../../Assets/Image/Project-overview.jpg"
-import Elements from "../../../../Assets/Image/Project-elements.jpg"
-import Instructions from "../../../../Assets/Image/Instruction.jpg"
-import classes from "./Projects.module.scss"
-import { Link } from "react-router-dom"
+import React, { useState, useEffect } from 'react'
+import PeerviewImg from '../../../../Assets/Image/PeerView.png'
+import Mockup from '../../../../Assets/Image/Mockup.jpg'
+import Overview from '../../../../Assets/Image/Project-overview.jpg'
+import Elements from '../../../../Assets/Image/Project-elements.jpg'
+import Instructions from '../../../../Assets/Image/Instruction.jpg'
+import classes from './Projects.module.scss'
+import { Link } from 'react-router-dom'
 
 const PeerView = (props) => {
-  console.log(props)
   const [load, setLoad] = useState(true)
   const [menu, setMenu] = useState(true)
 
@@ -29,8 +28,8 @@ const PeerView = (props) => {
         load
           ? menu
             ? classes.WorkContainer
-            : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
-          : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
+            : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
+          : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
       }
     >
       <div className={classes.ProjectContainer}>
@@ -64,8 +63,12 @@ const PeerView = (props) => {
             </p>
             <p>The final application has been implemented and delivered.</p>
             <p>
-              View at{" "}
-              <a href="https://peerview.monash/" target="_blank">
+              View at{' '}
+              <a
+                href="https://peerview.monash/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 https://peerview.monash/
               </a>
             </p>
@@ -132,7 +135,7 @@ const PeerView = (props) => {
           </div>
         </div>
         <div className={classes.SectionLine}></div>
-        <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>
           <img src={Mockup} alt="Project-overview"></img>
           <img src={Overview} alt="Project-overview"></img>
           <img src={Elements} alt="Project-overview"></img>
@@ -140,12 +143,12 @@ const PeerView = (props) => {
         </div>
         <div className={classes.SectionLine}></div>
         <div className={classes.NavigateButton}>
-          <Link to="/work/studyplan" className={classes.Previous}>
+          <Link to="/work/checkin" className={classes.Previous}>
             <span className={classes.Arrow}></span>
             <span className={classes.ArrowLine}></span>
             <span className={classes.ArrowText}>Previous</span>
           </Link>
-          <Link to="/work/oz" className={classes.Next}>
+          <Link to="/work/studyplan" className={classes.Next}>
             <span className={classes.ArrowText}>Next</span>
             <span className={classes.ArrowLine}></span>
             <span className={classes.Arrow}></span>

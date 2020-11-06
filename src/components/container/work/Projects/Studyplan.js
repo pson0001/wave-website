@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react"
-import StudyplanImg from "../../../../Assets/Image/Studyplan.png"
-import Task from "../../../../Assets/Image/studyplan-task.jpg"
-import Wireframe from "../../../../Assets/Image/Wireframe.jpg"
-import Hero from "../../../../Assets/Image/Studyplan-hero.jpg"
-import StydyplanFull from "../../../../Assets/Image/study-full.jpg"
-import classes from "./Projects.module.scss"
-import { Link } from "react-router-dom"
+import React, { useState, useEffect } from 'react'
+import StudyplanImg from '../../../../Assets/Image/Studyplan.png'
+import Task from '../../../../Assets/Image/studyplan-task.jpg'
+import Wireframe from '../../../../Assets/Image/Wireframe.jpg'
+import Hero from '../../../../Assets/Image/Studyplan-hero.jpg'
+import StydyplanFull from '../../../../Assets/Image/study-full.jpg'
+import classes from './Projects.module.scss'
+import { Link } from 'react-router-dom'
 
 const PeerView = (props) => {
-  console.log(props)
   const [load, setLoad] = useState(true)
   const [menu, setMenu] = useState(true)
 
@@ -29,8 +28,8 @@ const PeerView = (props) => {
         load
           ? menu
             ? classes.WorkContainer
-            : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
-          : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
+            : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
+          : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
       }
     >
       <div className={classes.ProjectContainer}>
@@ -97,12 +96,12 @@ const PeerView = (props) => {
             <li>Creat wireframe for function design reference</li>
           </div>
         </div>
-        <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
-          <img src={Task} alt="Taskflow" style={{ width: "60vw" }}></img>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>
+          <img src={Task} alt="Taskflow" style={{ width: '60vw' }}></img>
           <img
             src={Wireframe}
             alt="Project-overview"
-            style={{ width: "60vw" }}
+            style={{ width: '60vw' }}
           ></img>
         </div>
         <div className={classes.SectionLine}></div>
@@ -120,18 +119,18 @@ const PeerView = (props) => {
           </div>
         </div>
         <div className={classes.SectionLine}></div>
-        <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>
           <img src={Hero} alt="Project-overview"></img>
           <img src={StydyplanFull} alt="Project-overview"></img>
         </div>
         <div className={classes.SectionLine}></div>
         <div className={classes.NavigateButton}>
-          <Link to="/work/checkin" className={classes.Previous}>
+          <Link to="/work/peerview" className={classes.Previous}>
             <span className={classes.Arrow}></span>
             <span className={classes.ArrowLine}></span>
             <span className={classes.ArrowText}>Previous</span>
           </Link>
-          <Link to="/work/peerview" className={classes.Next}>
+          <Link to="/work/oz" className={classes.Next}>
             <span className={classes.ArrowText}>Next</span>
             <span className={classes.ArrowLine}></span>
             <span className={classes.Arrow}></span>

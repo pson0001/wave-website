@@ -1,17 +1,17 @@
-import React, { useEffect } from "react"
-import { Switch, Route } from "react-router-dom"
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 
-import Home from "./home/Home"
-import About from "./about/About"
-import Work from "./work/Work"
-import PingMe from "./pingMe/PingMe"
-import PeerView from "./work/Projects/PeerView"
-import Checkin from "./work/Projects/Checkin"
+import Home from './home/Home'
+import About from './about/About'
+import Work from './work/Work'
+import PingMe from './pingMe/PingMe'
+import PeerView from './work/Projects/PeerView'
+import Checkin from './work/Projects/Checkin'
 
-import Studyplan from "./work/Projects/Studyplan"
-import Oz from "./work/Projects/Oz"
-import Blockchain from "./work/Projects/Blockchain"
-import Visualization from "./work/Projects/Visualization"
+import Studyplan from './work/Projects/Studyplan'
+import Oz from './work/Projects/Oz'
+import Blockchain from './work/Projects/Blockchain'
+import Visualization from './work/Projects/Visualization'
 
 const Container = (props) => {
   return (

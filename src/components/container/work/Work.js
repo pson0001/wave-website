@@ -57,8 +57,7 @@ const Work = (props) => {
   const [openPeerView, setOpenPeerView] = useState(false)
 
   const PeerViewOpenHandler = (e) => {
-
-     e.preventDefault()
+    e.preventDefault()
     const section = document.querySelector('#peerRef')
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenPeerView(true)
@@ -74,7 +73,6 @@ const Work = (props) => {
   const OzOpenHandler = (e) => {
     e.preventDefault()
     const section = document.querySelector('#ozRef')
-    console.log(section.getBoundingClientRect().top)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenOz(true)
     window.setTimeout(() => {
@@ -90,7 +88,6 @@ const Work = (props) => {
   const BlockOpenHandler = (e) => {
     e.preventDefault()
     const section = document.querySelector('#blockchainRef')
-    console.log(section.getBoundingClientRect().top)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenBlockChain(true)
     window.setTimeout(() => {
@@ -106,7 +103,6 @@ const Work = (props) => {
   const VisualizationHandler = (e) => {
     e.preventDefault()
     const section = document.querySelector('#visualizationRef')
-    console.log(section.getBoundingClientRect().top)
     section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     setOpenVisualization(true)
     window.setTimeout(() => {
@@ -157,28 +153,6 @@ const Work = (props) => {
             </Link>
           </div>
         </div>
-        <div className={classes.ProjectContainer} id="studyRef">
-          <div
-            className={
-              openStudyplan
-                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
-                : classes.WorkImg
-            }
-          >
-            <Link to="/work/studyplan" onClick={(e) => StudyplanOpenHandler(e)}>
-              <img
-                className={classes.CoverImg}
-                src={StudyplanImg}
-                alt="studyplan"
-              ></img>
-
-              <span className={classes.CoverText}>
-                Personal Study Plan is a digital solution that helps students
-                move their studies from on-campus to online due to COVID.
-              </span>
-            </Link>
-          </div>
-        </div>
         <div className={classes.ProjectContainer} id="peerRef">
           <div
             className={
@@ -201,6 +175,29 @@ const Work = (props) => {
             </Link>
           </div>
         </div>
+        <div className={classes.ProjectContainer} id="studyRef">
+          <div
+            className={
+              openStudyplan
+                ? [classes.WorkImg, classes.WorkImgBg].join(' ')
+                : classes.WorkImg
+            }
+          >
+            <Link to="/work/studyplan" onClick={(e) => StudyplanOpenHandler(e)}>
+              <img
+                className={classes.CoverImg}
+                src={StudyplanImg}
+                alt="studyplan"
+              ></img>
+
+              <span className={classes.CoverText}>
+                Personal Study Plan is a digital solution that helps students
+                move their studies from on-campus to online due to COVID.
+              </span>
+            </Link>
+          </div>
+        </div>
+
         <div className={classes.ProjectContainer} id="ozRef">
           <div
             className={

@@ -1,14 +1,13 @@
-import React, { useState, useEffect } from "react"
-import CheckinImg from "../../../../Assets/Image/checkin.jpg"
-import UserFLow from "../../../../Assets/Image/userflow.jpg"
-import DataFlow from "../../../../Assets/Image/dataflow.jpg"
-import Phone from "../../../../Assets/Image/phone.jpg"
-import Desktop from "../../../../Assets/Image/desktop.jpg"
-import classes from "./Projects.module.scss"
-import { Link } from "react-router-dom"
+import React, { useState, useEffect } from 'react'
+import CheckinImg from '../../../../Assets/Image/checkin.jpg'
+import UserFLow from '../../../../Assets/Image/userflow.jpg'
+import DataFlow from '../../../../Assets/Image/dataflow.jpg'
+import Phone from '../../../../Assets/Image/phone.jpg'
+import Desktop from '../../../../Assets/Image/desktop.jpg'
+import classes from './Projects.module.scss'
+import { Link } from 'react-router-dom'
 
 const PeerView = (props) => {
-  console.log(props)
   const [load, setLoad] = useState(true)
   const [menu, setMenu] = useState(true)
 
@@ -29,8 +28,8 @@ const PeerView = (props) => {
         load
           ? menu
             ? classes.WorkContainer
-            : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
-          : [classes.WorkContainer, classes.WorkContainerDisabled].join(" ")
+            : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
+          : [classes.WorkContainer, classes.WorkContainerDisabled].join(' ')
       }
     >
       <div className={classes.ProjectContainer}>
@@ -101,9 +100,9 @@ const PeerView = (props) => {
             <li>Creat wireframe for function design and data references.</li>
           </div>
         </div>
-        <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
-          <img src={UserFLow} alt="UserFLow" style={{ width: "60vw" }}></img>
-          <img src={DataFlow} alt="UserFLow" style={{ width: "60vw" }}></img>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>
+          <img src={UserFLow} alt="UserFLow" style={{ width: '60vw' }}></img>
+          <img src={DataFlow} alt="UserFLow" style={{ width: '60vw' }}></img>
         </div>
         <div className={classes.SectionLine}></div>
         <div className={classes.ContentContainer}>
@@ -120,7 +119,7 @@ const PeerView = (props) => {
           </div>
         </div>
         <div className={classes.SectionLine}></div>
-        <div className={[classes.WorkImgBg, classes.SupportSpace].join(" ")}>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>
           <img src={Phone} alt="Phone"></img>
           <img src={Desktop} alt="Desktop"></img>
         </div>
@@ -131,7 +130,7 @@ const PeerView = (props) => {
             <span className={classes.ArrowLine}></span>
             <span className={classes.ArrowText}>Back to work</span>
           </Link>
-          <Link to="/work/studyplan" className={classes.Next}>
+          <Link to="/work/peerview" className={classes.Next}>
             <span className={classes.ArrowText}>Next</span>
             <span className={classes.ArrowLine}></span>
             <span className={classes.Arrow}></span>

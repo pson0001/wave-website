@@ -8,7 +8,6 @@ import classes from "./Projects.module.scss"
 import { Link } from "react-router-dom"
 
 const Blockchain = (props) => {
-  console.log(props)
   const [load, setLoad] = useState(true)
   const [menu, setMenu] = useState(true)
 
