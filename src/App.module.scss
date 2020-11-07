@@ -44,6 +44,7 @@
     left: 50vw;
     transform: translate(-50%, -50%);
     background-color: #171caf;
+
     border-radius: 200px;
     transition: all 0.6s ease;
     z-index: 1;
@@ -66,6 +67,7 @@
     animation: drift 2s infinite linear;
     animation-delay: 0.6s;
   }
+
   & .WaveMenu {
     width: 100vw;
     height: 100vh;

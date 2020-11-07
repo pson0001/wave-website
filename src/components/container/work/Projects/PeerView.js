@@ -90,6 +90,7 @@ const PeerView = (props) => {
             <li>Understand business objectives</li>
           </div>
         </div>
+
         <div className={classes.SectionLine}></div>
         <div className={classes.ContentContainer}>
           <div className={classes.LeftContent}>

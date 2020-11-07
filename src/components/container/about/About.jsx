@@ -13,7 +13,7 @@ const About = (props) => {
   }, [])
 
   return (
-    < div
+    <div
       className={
         menu
           ? load
@@ -24,6 +24,7 @@ const About = (props) => {
     >
       <div className={classes.AboutContentContainer}>
         <p className={classes.ParaTitle}>A bit about me</p>
+
         <p>
           I am a <span className={classes.Blue}>UX UI Designer</span> with a
           background in{' '}
@@ -157,7 +158,7 @@ const About = (props) => {
           </div>
         </div>
       </div>
-    </div >
+    </div>
   )
 }
 

@@ -119,7 +119,7 @@ const Navigation = (props) => {
           <Link to="/">P</Link>
         </div>
         <div className={classes.BurgerContainer}>
-          <span>Menu</span>
+          <span className={classes.menuLabel}>Menu</span>
           <div
             className={
               menu

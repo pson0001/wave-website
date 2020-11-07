@@ -4,6 +4,7 @@ import UserFLow from '../../../../Assets/Image/userflow.jpg'
 import DataFlow from '../../../../Assets/Image/dataflow.jpg'
 import Phone from '../../../../Assets/Image/phone.jpg'
 import Desktop from '../../../../Assets/Image/desktop.jpg'
+import Code from '../../../../Assets/Image/code.jpg'
 import classes from './Projects.module.scss'
 import { Link } from 'react-router-dom'
 
@@ -117,6 +118,9 @@ const PeerView = (props) => {
               into an enjoyable experience.
             </li>
           </div>
+        </div>
+        <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>
+          <img src={Code} alt="QR code" style={{ width: '70vw' }}></img>
         </div>
         <div className={classes.SectionLine}></div>
         <div className={[classes.WorkImgBg, classes.SupportSpace].join(' ')}>

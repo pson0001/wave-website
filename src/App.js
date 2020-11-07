@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
-import { BrowserRouter as Router, Redirect } from "react-router-dom"
-import Navigation from "./components/navigation/Navigation"
-import Container from "./components/container/Container"
-import classes from "./App.module.scss"
+import React, { useState, useEffect } from 'react'
+import { BrowserRouter as Router, Redirect } from 'react-router-dom'
+import Navigation from './components/navigation/Navigation'
+import Container from './components/container/Container'
+import classes from './App.module.scss'
 
 function App() {
   const [load, setLoad] = useState(false)
@@ -20,27 +20,27 @@ function App() {
   }
 
   const pathnameHandler = (pathname) => {
-    if (pathname === "/") {
+    if (pathname === '/') {
       setTimeout(() => setActiveWave(true), 600)
     } else if (
-      pathname === "/about" ||
-      pathname === "/about/" ||
-      pathname === "/work" ||
-      pathname === "/work/" ||
-      pathname === "/work/checkin" ||
-      pathname === "/work/checkin/" ||
-      pathname === "/work/studyplan" ||
-      pathname === "/work/studyplan/" ||
-      pathname === "/work/peerview" ||
-      pathname === "/work/peerview/" ||
-      pathname === "/work/oz" ||
-      pathname === "/work/oz/" ||
-      pathname === "/work/blockchain" ||
-      pathname === "/work/blockchain/" ||
-      pathname === "/work/visualization" ||
-      pathname === "/work/visualization/" ||
-      pathname === "/pingme" ||
-      pathname === "/pingme/"
+      pathname === '/about' ||
+      pathname === '/about/' ||
+      pathname === '/work' ||
+      pathname === '/work/' ||
+      pathname === '/work/checkin' ||
+      pathname === '/work/checkin/' ||
+      pathname === '/work/studyplan' ||
+      pathname === '/work/studyplan/' ||
+      pathname === '/work/peerview' ||
+      pathname === '/work/peerview/' ||
+      pathname === '/work/oz' ||
+      pathname === '/work/oz/' ||
+      pathname === '/work/blockchain' ||
+      pathname === '/work/blockchain/' ||
+      pathname === '/work/visualization' ||
+      pathname === '/work/visualization/' ||
+      pathname === '/pingme' ||
+      pathname === '/pingme/'
     ) {
       setTimeout(() => setActiveWave(false), 0)
     } else {
@@ -61,7 +61,7 @@ function App() {
         className={
           activeWave
             ? classes.WaveContainer
-            : [classes.WaveContainerDisable, classes.WaveContainer].join(" ")
+            : [classes.WaveContainerDisable, classes.WaveContainer].join(' ')
         }
       >
         <div
@@ -72,15 +72,15 @@ function App() {
                   classes.WaveOneRectangle,
                   classes.WaveOne,
                   classes.WaveMenu,
-                ].join(" ")
+                ].join(' ')
               : finishLoad
               ? [
                   classes.WaveOneInitial,
                   classes.WaveOneRectangle,
                   classes.WaveOne,
-                ].join(" ")
+                ].join(' ')
               : load
-              ? [classes.WaveOneInitial, classes.WaveOneRectangle].join(" ")
+              ? [classes.WaveOneInitial, classes.WaveOneRectangle].join(' ')
               : classes.WaveOneInitial
           }
         ></div>
@@ -92,13 +92,13 @@ function App() {
         className={
           activeWave
             ? finishLoad
-              ? [classes.IntroContainer, classes.IntroContainerLoaded].join(" ")
+              ? [classes.IntroContainer, classes.IntroContainerLoaded].join(' ')
               : classes.IntroContainer
             : [
                 classes.IntroContainer,
                 classes.IntroContainerLoaded,
                 classes.IntroDisable,
-              ].join(" ")
+              ].join(' ')
         }
       >
         <p className={classes.Name}>Ping Song</p>

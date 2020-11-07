@@ -8,7 +8,7 @@
   opacity: 1;
   transition: all 0.4s ease;
   color: #15186d;
-  font-weight: 300;
+  font-weight: 400;
 
   & .AboutContentContainer {
     width: 50%;
@@ -35,7 +35,6 @@
         background-repeat: no-repeat;
       }
     }
-
 
     .Yellow {
       white-space: nowrap;
@@ -72,8 +71,8 @@
     }
 
     & .ParaTitle {
-      font-family: 'Lobster';
-      color: #171caf;
+      font-weight: 700;
+      color: #15186d;
       font-size: 28px;
       margin-bottom: 50px;
     }
@@ -82,11 +81,9 @@
       margin-top: 80px;
 
       & .SubParaTitle {
-        font-size: 20px;
-        font-family: 'Lobster';
-        color: #171caf;
-
-
+        font-size: 28px;
+        font-weight: 700;
+        color: #15186d;
       }
 
       & .ContentContainer {
@@ -103,13 +100,10 @@
 
           width: 70%;
 
-
           p:first-child {
-            font-weight: 400;
+            font-weight: 600;
             font-size: 16px;
           }
-
-
         }
       }
     }

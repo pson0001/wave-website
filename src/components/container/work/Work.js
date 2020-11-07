@@ -128,7 +128,7 @@ const Work = (props) => {
           <p>i Learn</p>
           <p>i Think</p>
           <p>i Create</p>
-          <p className={classes.ContentLabel}>UX / UI / Develop</p>
+          {/* <p className={classes.ContentLabel}>UX / UI / Develop</p> */}
         </div>
 
         <div className={classes.ProjectContainer} id="checkinRef">

@@ -4,6 +4,7 @@ import Task from '../../../../Assets/Image/studyplan-task.jpg'
 import Wireframe from '../../../../Assets/Image/Wireframe.jpg'
 import Hero from '../../../../Assets/Image/Studyplan-hero.jpg'
 import StydyplanFull from '../../../../Assets/Image/study-full.jpg'
+
 import classes from './Projects.module.scss'
 import { Link } from 'react-router-dom'
 
